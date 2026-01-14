@@ -13,8 +13,15 @@ int main() {
 
     /*
     next we will:
-    - make a variable (a noun) to store the user's name*/
+    - make a variable (a noun) to store the user's name
     - ask them by the name
-    - greet them by name 
+    - greet them by name
+    */
+    string name; // new "box" to hold a name in
+    cout << "What's your name? ";
+    cin >> name; // read in their answer
+    // finally, say hi to them
+    cout << "HAIIIIIIII, " << name << " >v<!!" << endl;
+
     return 0; // no errors
 }
