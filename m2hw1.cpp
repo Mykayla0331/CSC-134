@@ -11,17 +11,16 @@ using namespace std;
 
 // declare variables
 string response;
-string username, account, deposit, withdrawal, finalaccount;
-int roll(20);
+string username;
 
 double pizzas, slices, total_pizzas, leftovers, visitor_ate, visitors;
-
+double account, deposit, withdrawal, finalaccount;
 
 int main() {
+  int seed = time(0);
+  srand(seed);
 
-  srand((unsigned) time(NULL))
-
-  int  % 10; 
+  int accountno = rand();  // I was trying to make it a rng from 8-12 numbes, but I couldn't figure out how to do that.
 
     cout << " " << endl;
     cout << "************" << endl;
@@ -35,18 +34,27 @@ int main() {
     cin >> username;
     cout << "ENTER CURRENT ACCOUNT BALANCE:" << endl;
     cin >> account;
-    cout >> "ENTER AMOUNT OF DEPOSIT:" << endl;
-    cin << deposit;
-    cout >> "ENTER AMOUNT OF WITHDRAWAL:" << endl;
-    cin << withdrawal;
+    cout << "ENTER AMOUNT OF DEPOSIT:" << endl;
+    cin >> deposit;
+    cout << "ENTER AMOUNT OF WITHDRAWAL:" << endl;
+    cin >> withdrawal;
 
   // math
     finalaccount = account + deposit - withdrawal;
 
   // print
+    cout << "-----------------------" << endl;
     cout << "TRANSACTION COMPLETE:" << endl;
     cout << "NAME: " << username << endl;
     cout << "ACC NO. " << accountno << endl;
+    cout << "ACC BALANCE: $" << finalaccount << endl;
+    cout << "-----------------------" << endl;
+    cout << "PLEASE HAVE A NICE DAY ! " << endl;
+    cout << " " << endl;
+    cout << "Type anything then press enter for next question ! " << endl;
+    cin >> response;
+    
+    // question 2
 
     cout << " " << endl;
     cout << "************" << endl;
