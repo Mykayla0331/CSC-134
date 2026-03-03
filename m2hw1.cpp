@@ -1,16 +1,53 @@
 // CSC 134
-// M2HW
+// M2HW - GOLD
 // 3.2.26
 // MYKAYLA LEWIS
 
 #include <iostream>
 #include <iomanip>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
+
+// declare variables
 string response;
+string username, account, deposit, withdrawal, finalaccount;
+int roll(20);
 
 double pizzas, slices, total_pizzas, leftovers, visitor_ate, visitors;
 
+
 int main() {
+
+  srand((unsigned) time(NULL))
+
+  int  % 10; 
+
+    cout << " " << endl;
+    cout << "************" << endl;
+    cout << "*QUESTION 1*" << endl;
+    cout << "************" << endl;
+    cout << "BANKING TRANSACTIONS" << endl;
+    cout << " " << endl;
+
+    // user's info
+    cout << "ENTER YOUR NAME:" << endl;
+    cin >> username;
+    cout << "ENTER CURRENT ACCOUNT BALANCE:" << endl;
+    cin >> account;
+    cout >> "ENTER AMOUNT OF DEPOSIT:" << endl;
+    cin << deposit;
+    cout >> "ENTER AMOUNT OF WITHDRAWAL:" << endl;
+    cin << withdrawal;
+
+  // math
+    finalaccount = account + deposit - withdrawal;
+
+  // print
+    cout << "TRANSACTION COMPLETE:" << endl;
+    cout << "NAME: " << username << endl;
+    cout << "ACC NO. " << accountno << endl;
+
     cout << " " << endl;
     cout << "************" << endl;
     cout << "*QUESTION 2*" << endl;
