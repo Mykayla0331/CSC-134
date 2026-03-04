@@ -17,6 +17,9 @@ using namespace std;
 using namespace std;
 // grab user's present time
 string timenow()
+string tolower(string s) {
+        transform(s.begin(), s.end(), s.begin(), ::tolower);
+    }
 {
     time_t tt;
 
@@ -33,7 +36,6 @@ int main(){
     int highscore = 0;
     int playerscore = 0;
     int correctquiz = 0;
-    string answer;
     bool gamerun = true;
     string keepgoing;
     ///////////////////INTRO////////////////
@@ -79,8 +81,24 @@ int main(){
     cout << "I am a four-legged mammal often kept as a pet, I am often associated with bone and being dirty." << endl;
     cout << " " << endl;
     cout << "What am I?" << endl;
-    cin >> answer;
-    if (    )
+
+
+    time_t startTime = time(nullptr); // begins timer
+    string answer1
+    cin >> answer1;
+    answer1 = tolower(answer1);
+    time_t endTime = time(nullptr);
+    double timeTaken = difftime(endTime, startTime);
+
+    if (timetaken > quizcount) {
+        cout << "TIME'S UP" << endl;
+        cout << "NEXT QUESTION..." << endl;
+    }
+    if (answer1 == tolower(right1)) {
+        double timeRemaining = quizcount - timeTaken;
+        int multiplier = floor(timeRemaining);
+        int playerscore = quizscore * multiplier;
+    }
 
 
     if (playerscore > highscore) {
