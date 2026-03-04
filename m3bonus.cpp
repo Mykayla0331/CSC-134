@@ -9,8 +9,11 @@
 #include <ctime>
 #include <thread>
 #include <algorithm>
+#include <cmath>
+#include <vector>
 
 
+using namespace std;
 using namespace std;
 // grab user's present time
 string timenow()
@@ -28,7 +31,9 @@ string timenow()
 
 int main(){
     int highscore = 0;
-    int playerscore;
+    int playerscore = 0;
+    int correctquiz = 0;
+    string answer;
     bool gamerun = true;
     string keepgoing;
     ///////////////////INTRO////////////////
@@ -40,6 +45,10 @@ int main(){
     this_thread::sleep_for(chrono::seconds(2));
     cout << " ** If you get one wrong, the quiz will still continue" << endl;
     this_thread::sleep_for(chrono::seconds(2));
+    cout << " ** The faster you answer, the more points you will recieve." << endl;
+    this_thread::sleep_for(chrono::seconds(2));
+    cout << " ** There are 21 questions in total." << endl;
+    this_thread::sleep_for(chrono::seconds(2));
     cout << " ** Replay over and over again for a new highscore!" << endl;
     this_thread::sleep_for(chrono::seconds(2));
     cout << " " << endl;
@@ -47,8 +56,9 @@ int main(){
 
     while (gamerun) {
      // declare variable
+    int quizscore = 20;
     int seconds = 3;
-    int quizcount = 25;
+    const int quizcount = 25;
 
     while (seconds >= 1) {
         cout << "READY IN: " << seconds << endl;
@@ -66,8 +76,22 @@ int main(){
     cout << "*QUESTION 1*" << endl;
     cout << "************" << endl;
     this_thread::sleep_for(chrono::seconds(2));
+    cout << "I am a four-legged mammal often kept as a pet, I am often associated with bone and being dirty." << endl;
     cout << " " << endl;
-    cout << "*QUESTION 1*" << endl;
+    cout << "What am I?" << endl;
+    cin >> answer;
+    if (    )
+
+
+    if (playerscore > highscore) {
+        highscore = playerscore;
+    }
+        cout << "POINTS: " << playerscore << "" << endl;
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "You scored: " << correctquiz << "/21!! " << endl;
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "Your highscore is: " << highscore << " PTS. 🎉🎉"<< endl;
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     this_thread::sleep_for(chrono::seconds(2));
