@@ -201,7 +201,7 @@ int main(){
         if (timeTaken > quizcount) {
             cout << "TIME'S UP!" << endl;
         }
-        else if (answer == "Shark"){
+        else if (answer == "shark"){
             double timeRemaining = max(0.0, quizcount -timeTaken);
             int multiplier = floor(timeRemaining);
             int questionpoint = quizscore * multiplier;
@@ -238,7 +238,7 @@ int main(){
         if (timeTaken > quizcount) {
             cout << "TIME'S UP!" << endl;
         }
-        else if (answer == "Spider"){
+        else if (answer == "spider"){
             double timeRemaining = max(0.0, quizcount -timeTaken);
             int multiplier = floor(timeRemaining);
             int questionpoint = quizscore * multiplier;
@@ -275,7 +275,7 @@ int main(){
         if (timeTaken > quizcount) {
             cout << "TIME'S UP!" << endl;
         }
-        else if (answer == "Bee"){
+        else if (answer == "bee"){
             double timeRemaining = max(0.0, quizcount -timeTaken);
             int multiplier = floor(timeRemaining);
             int questionpoint = quizscore * multiplier;
@@ -312,7 +312,7 @@ int main(){
         if (timeTaken > quizcount) {
             cout << "TIME'S UP!" << endl;
         }
-        else if (answer == "Butterfly"){
+        else if (answer == "butterfly"){
             double timeRemaining = max(0.0, quizcount -timeTaken);
             int multiplier = floor(timeRemaining);
             int questionpoint = quizscore * multiplier;
@@ -349,7 +349,7 @@ int main(){
         if (timeTaken > quizcount) {
             cout << "TIME'S UP!" << endl;
         }
-        else if (answer == "Turtle"){
+        else if (answer == "turtle"){
             double timeRemaining = max(0.0, quizcount -timeTaken);
             int multiplier = floor(timeRemaining);
             int questionpoint = quizscore * multiplier;
@@ -386,7 +386,7 @@ int main(){
         if (timeTaken > quizcount) {
             cout << "TIME'S UP!" << endl;
         }
-        else if (answer == "Squid"){
+        else if (answer == "squid"){
             double timeRemaining = max(0.0, quizcount -timeTaken);
             int multiplier = floor(timeRemaining);
             int questionpoint = quizscore * multiplier;
@@ -423,7 +423,7 @@ int main(){
         if (timeTaken > quizcount) {
             cout << "TIME'S UP!" << endl;
         }
-        else if (answer == "Fox"){
+        else if (answer == "fox"){
             double timeRemaining = max(0.0, quizcount -timeTaken);
             int multiplier = floor(timeRemaining);
             int questionpoint = quizscore * multiplier;
