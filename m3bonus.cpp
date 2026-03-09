@@ -38,12 +38,13 @@ int main(){
     cout << "**********************" << endl;
     cout << " " << endl;
     cout << " ** You will have 15 seconds to guess the animal by the description given." << endl;
+    cout << " ** Anwser by typing the animal and the animal only." << endl;
     this_thread::sleep_for(chrono::seconds(2));
     cout << " ** If you get one wrong, the quiz will still continue" << endl;
     this_thread::sleep_for(chrono::seconds(2));
     cout << " ** The faster you answer, the more points you will recieve." << endl;
     this_thread::sleep_for(chrono::seconds(2));
-    cout << " ** There are 21 questions in total." << endl;
+    cout << " ** There are 25 questions in total." << endl;
     this_thread::sleep_for(chrono::seconds(2));
     cout << " ** Replay over and over again for a new highscore!" << endl;
     this_thread::sleep_for(chrono::seconds(2));
@@ -441,6 +442,523 @@ int main(){
             cout << questionpoint << " pts." << endl;
         }
 
+        ///////////////QUESTION 11
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "************" << endl;
+        cout << "*QUESTION 11*" << endl;
+        cout << "************" << endl;
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "I am a big black-and-white mammal who eats bamboo." << endl;
+        cout << " " << endl;
+        cout << "What am I?" << endl;
+
+        startTime = time(nullptr);
+        cin >> answer;
+        transform(answer.begin(), answer.end(), answer.begin(), ::tolower);
+        endTime = time(nullptr);
+        timeTaken = difftime(endTime, startTime);
+
+        if (timeTaken > quizcount) {
+            cout << "TIME'S UP!" << endl;
+        }
+        else if (answer == "panda" || answer == "panda bear"){
+            double timeRemaining = max(0.0, quizcount -timeTaken);
+            int multiplier = floor(timeRemaining);
+            int questionpoint = quizscore * multiplier;
+            playerscore += questionpoint;
+            questionsright += 1;
+            cout << "Correct! I'm a panda! 🐼" << endl;
+            if (timeRemaining == 1){
+                cout << quizscore << " pts. x " << timeRemaining << " second = " << endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            else{
+                cout << quizscore << " pts. x " << timeRemaining << " seconds = " <<  endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            cout << questionpoint << " pts." << endl;
+        }
+
+                ///////////////QUESTION 12
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "************" << endl;
+        cout << "*QUESTION 12*" << endl;
+        cout << "************" << endl;
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "I am a well-known low-energy mammal who munch on eucalyptus leaves" << endl;
+        cout << " " << endl;
+        cout << "What am I?" << endl;
+
+        startTime = time(nullptr);
+        cin >> answer;
+        transform(answer.begin(), answer.end(), answer.begin(), ::tolower);
+        endTime = time(nullptr);
+        timeTaken = difftime(endTime, startTime);
+
+        if (timeTaken > quizcount) {
+            cout << "TIME'S UP!" << endl;
+        }
+        else if (answer == "koala"){
+            double timeRemaining = max(0.0, quizcount -timeTaken);
+            int multiplier = floor(timeRemaining);
+            int questionpoint = quizscore * multiplier;
+            playerscore += questionpoint;
+            questionsright += 1;
+            cout << "Correct! I'm a koala! 🐨" << endl;
+            if (timeRemaining == 1){
+                cout << quizscore << " pts. x " << timeRemaining << " second = " << endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            else{
+                cout << quizscore << " pts. x " << timeRemaining << " seconds = " <<  endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            cout << questionpoint << " pts." << endl;
+        }
+
+                ///////////////QUESTION 13
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "************" << endl;
+        cout << "*QUESTION 13*" << endl;
+        cout << "************" << endl;
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "I am a huge white mammal living in arctic environment. I am known for being wildly aggressive." << endl;
+        cout << " " << endl;
+        cout << "What am I?" << endl;
+
+        startTime = time(nullptr);
+        cin >> answer;
+        transform(answer.begin(), answer.end(), answer.begin(), ::tolower);
+        endTime = time(nullptr);
+        timeTaken = difftime(endTime, startTime);
+
+        if (timeTaken > quizcount) {
+            cout << "TIME'S UP!" << endl;
+        }
+        else if (answer == "polar bear"){
+            double timeRemaining = max(0.0, quizcount -timeTaken);
+            int multiplier = floor(timeRemaining);
+            int questionpoint = quizscore * multiplier;
+            playerscore += questionpoint;
+            questionsright += 1;
+            cout << "Correct! I'm a polar bear! 🐻‍❄️" << endl;
+            if (timeRemaining == 1){
+                cout << quizscore << " pts. x " << timeRemaining << " second = " << endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            else{
+                cout << quizscore << " pts. x " << timeRemaining << " seconds = " <<  endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            cout << questionpoint << " pts." << endl;
+        }
+
+                ///////////////QUESTION 14
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "************" << endl;
+        cout << "*QUESTION 14*" << endl;
+        cout << "************" << endl;
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "You can find me on a farm, usually blotched. Farmers keep me for milk." << endl;
+        cout << " " << endl;
+        cout << "What am I?" << endl;
+
+        startTime = time(nullptr);
+        cin >> answer;
+        transform(answer.begin(), answer.end(), answer.begin(), ::tolower);
+        endTime = time(nullptr);
+        timeTaken = difftime(endTime, startTime);
+
+        if (timeTaken > quizcount) {
+            cout << "TIME'S UP!" << endl;
+        }
+        else if (answer == "cow"){
+            double timeRemaining = max(0.0, quizcount -timeTaken);
+            int multiplier = floor(timeRemaining);
+            int questionpoint = quizscore * multiplier;
+            playerscore += questionpoint;
+            questionsright += 1;
+            cout << "Correct! I'm a cow! 🐄" << endl;
+            if (timeRemaining == 1){
+                cout << quizscore << " pts. x " << timeRemaining << " second = " << endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            else{
+                cout << quizscore << " pts. x " << timeRemaining << " seconds = " <<  endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            cout << questionpoint << " pts." << endl;
+        }
+
+                ///////////////QUESTION 16
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "************" << endl;
+        cout << "*QUESTION 16*" << endl;
+        cout << "************" << endl;
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "I am considered soft and wooly and I go \"Baa\"." << endl;
+        cout << " " << endl;
+        cout << "What am I?" << endl;
+
+        startTime = time(nullptr);
+        cin >> answer;
+        transform(answer.begin(), answer.end(), answer.begin(), ::tolower);
+        endTime = time(nullptr);
+        timeTaken = difftime(endTime, startTime);
+
+        if (timeTaken > quizcount) {
+            cout << "TIME'S UP!" << endl;
+        }
+        else if (answer == "sheep"){
+            double timeRemaining = max(0.0, quizcount -timeTaken);
+            int multiplier = floor(timeRemaining);
+            int questionpoint = quizscore * multiplier;
+            playerscore += questionpoint;
+            questionsright += 1;
+            cout << "Correct! I'm a sheep! 🐑" << endl;
+            if (timeRemaining == 1){
+                cout << quizscore << " pts. x " << timeRemaining << " second = " << endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            else{
+                cout << quizscore << " pts. x " << timeRemaining << " seconds = " <<  endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            cout << questionpoint << " pts." << endl;
+        }
+
+                ///////////////QUESTION 17
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "************" << endl;
+        cout << "*QUESTION 17*" << endl;
+        cout << "************" << endl;
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "I am a horned and hooved mammal. I am known for eating just about anything." << endl;
+        cout << " " << endl;
+        cout << "What am I?" << endl;
+
+        startTime = time(nullptr);
+        cin >> answer;
+        transform(answer.begin(), answer.end(), answer.begin(), ::tolower);
+        endTime = time(nullptr);
+        timeTaken = difftime(endTime, startTime);
+
+        if (timeTaken > quizcount) {
+            cout << "TIME'S UP!" << endl;
+        }
+        else if (answer == "goat"){
+            double timeRemaining = max(0.0, quizcount -timeTaken);
+            int multiplier = floor(timeRemaining);
+            int questionpoint = quizscore * multiplier;
+            playerscore += questionpoint;
+            questionsright += 1;
+            cout << "Correct! I'm a goat! 🐐" << endl;
+            if (timeRemaining == 1){
+                cout << quizscore << " pts. x " << timeRemaining << " second = " << endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            else{
+                cout << quizscore << " pts. x " << timeRemaining << " seconds = " <<  endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            cout << questionpoint << " pts." << endl;
+        }
+
+                ///////////////QUESTION 18
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "************" << endl;
+        cout << "*QUESTION 18*" << endl;
+        cout << "************" << endl;
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "I am a desert mammal who's known for storing water in a \"hump\"." << endl;
+        cout << " " << endl;
+        cout << "What am I?" << endl;
+
+        startTime = time(nullptr);
+        cin >> answer;
+        transform(answer.begin(), answer.end(), answer.begin(), ::tolower);
+        endTime = time(nullptr);
+        timeTaken = difftime(endTime, startTime);
+
+        if (timeTaken > quizcount) {
+            cout << "TIME'S UP!" << endl;
+        }
+        else if (answer == "camel"){
+            double timeRemaining = max(0.0, quizcount -timeTaken);
+            int multiplier = floor(timeRemaining);
+            int questionpoint = quizscore * multiplier;
+            playerscore += questionpoint;
+            questionsright += 1;
+            cout << "Correct! I'm a camel! 🐫" << endl;
+            if (timeRemaining == 1){
+                cout << quizscore << " pts. x " << timeRemaining << " second = " << endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            else{
+                cout << quizscore << " pts. x " << timeRemaining << " seconds = " <<  endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            cout << questionpoint << " pts." << endl;
+        }
+
+                ///////////////QUESTION 19
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "************" << endl;
+        cout << "*QUESTION 19*" << endl;
+        cout << "************" << endl;
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "I am a ridden animal that's very powerful." << endl;
+        cout << " " << endl;
+        cout << "What am I?" << endl;
+
+        startTime = time(nullptr);
+        cin >> answer;
+        transform(answer.begin(), answer.end(), answer.begin(), ::tolower);
+        endTime = time(nullptr);
+        timeTaken = difftime(endTime, startTime);
+
+        if (timeTaken > quizcount) {
+            cout << "TIME'S UP!" << endl;
+        }
+        else if (answer == "horse"){
+            double timeRemaining = max(0.0, quizcount -timeTaken);
+            int multiplier = floor(timeRemaining);
+            int questionpoint = quizscore * multiplier;
+            playerscore += questionpoint;
+            questionsright += 1;
+            cout << "Correct! I'm a horse! 🐎" << endl;
+            if (timeRemaining == 1){
+                cout << quizscore << " pts. x " << timeRemaining << " second = " << endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            else{
+                cout << quizscore << " pts. x " << timeRemaining << " seconds = " <<  endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            cout << questionpoint << " pts." << endl;
+        }
+
+                ///////////////QUESTION 20
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "************" << endl;
+        cout << "*QUESTION 20*" << endl;
+        cout << "************" << endl;
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "I am typically a tiny mammal with long ears and a short tail. I am associated with carrots" << endl;
+        cout << " " << endl;
+        cout << "What am I?" << endl;
+
+        startTime = time(nullptr);
+        cin >> answer;
+        transform(answer.begin(), answer.end(), answer.begin(), ::tolower);
+        endTime = time(nullptr);
+        timeTaken = difftime(endTime, startTime);
+
+        if (timeTaken > quizcount) {
+            cout << "TIME'S UP!" << endl;
+        }
+        else if (answer == "rabbit" || answer == "bunny"){
+            double timeRemaining = max(0.0, quizcount -timeTaken);
+            int multiplier = floor(timeRemaining);
+            int questionpoint = quizscore * multiplier;
+            playerscore += questionpoint;
+            questionsright += 1;
+            cout << "Correct! I'm a rabbit! 🐇" << endl;
+            if (timeRemaining == 1){
+                cout << quizscore << " pts. x " << timeRemaining << " second = " << endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            else{
+                cout << quizscore << " pts. x " << timeRemaining << " seconds = " <<  endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            cout << questionpoint << " pts." << endl;
+        }
+
+                ///////////////QUESTION 21
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "************" << endl;
+        cout << "*QUESTION 21*" << endl;
+        cout << "************" << endl;
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "I'm usually a small grey and dark-grey mammal, known as a \"trash panda\"." << endl;
+        cout << " " << endl;
+        cout << "What am I?" << endl;
+
+        startTime = time(nullptr);
+        cin >> answer;
+        transform(answer.begin(), answer.end(), answer.begin(), ::tolower);
+        endTime = time(nullptr);
+        timeTaken = difftime(endTime, startTime);
+
+        if (timeTaken > quizcount) {
+            cout << "TIME'S UP!" << endl;
+        }
+        else if (answer == "raccoon"){
+            double timeRemaining = max(0.0, quizcount -timeTaken);
+            int multiplier = floor(timeRemaining);
+            int questionpoint = quizscore * multiplier;
+            playerscore += questionpoint;
+            questionsright += 1;
+            cout << "Correct! I'm a raccoon! 🦝" << endl;
+            if (timeRemaining == 1){
+                cout << quizscore << " pts. x " << timeRemaining << " second = " << endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            else{
+                cout << quizscore << " pts. x " << timeRemaining << " seconds = " <<  endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            cout << questionpoint << " pts." << endl;
+        }
+
+                ///////////////QUESTION 22
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "************" << endl;
+        cout << "*QUESTION 22*" << endl;
+        cout << "************" << endl;
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "I am a social apex predator, I work in packs in a forest." << endl;
+        cout << " " << endl;
+        cout << "What am I?" << endl;
+
+        startTime = time(nullptr);
+        cin >> answer;
+        transform(answer.begin(), answer.end(), answer.begin(), ::tolower);
+        endTime = time(nullptr);
+        timeTaken = difftime(endTime, startTime);
+
+        if (timeTaken > quizcount) {
+            cout << "TIME'S UP!" << endl;
+        }
+        else if (answer == "wolf"){
+            double timeRemaining = max(0.0, quizcount -timeTaken);
+            int multiplier = floor(timeRemaining);
+            int questionpoint = quizscore * multiplier;
+            playerscore += questionpoint;
+            questionsright += 1;
+            cout << "Correct! I'm a wolf! 🐺" << endl;
+            if (timeRemaining == 1){
+                cout << quizscore << " pts. x " << timeRemaining << " second = " << endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            else{
+                cout << quizscore << " pts. x " << timeRemaining << " seconds = " <<  endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            cout << questionpoint << " pts." << endl;
+        }
+
+                ///////////////QUESTION 23
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "************" << endl;
+        cout << "*QUESTION 23*" << endl;
+        cout << "************" << endl;
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "I am white with black stripes commonly theorized to repel insects. I live in the savanna." << endl;
+        cout << " " << endl;
+        cout << "What am I?" << endl;
+
+        startTime = time(nullptr);
+        cin >> answer;
+        transform(answer.begin(), answer.end(), answer.begin(), ::tolower);
+        endTime = time(nullptr);
+        timeTaken = difftime(endTime, startTime);
+
+        if (timeTaken > quizcount) {
+            cout << "TIME'S UP!" << endl;
+        }
+        else if (answer == "zebra"){
+            double timeRemaining = max(0.0, quizcount -timeTaken);
+            int multiplier = floor(timeRemaining);
+            int questionpoint = quizscore * multiplier;
+            playerscore += questionpoint;
+            questionsright += 1;
+            cout << "Correct! I'm a zebra! 🦓" << endl;
+            if (timeRemaining == 1){
+                cout << quizscore << " pts. x " << timeRemaining << " second = " << endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            else{
+                cout << quizscore << " pts. x " << timeRemaining << " seconds = " <<  endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            cout << questionpoint << " pts." << endl;
+        }
+
+                ///////////////QUESTION 24
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "************" << endl;
+        cout << "*QUESTION 24*" << endl;
+        cout << "************" << endl;
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "I am a white waterfowl noted for having only one mate for life." << endl;
+        cout << " " << endl;
+        cout << "What am I?" << endl;
+
+        startTime = time(nullptr);
+        cin >> answer;
+        transform(answer.begin(), answer.end(), answer.begin(), ::tolower);
+        endTime = time(nullptr);
+        timeTaken = difftime(endTime, startTime);
+
+        if (timeTaken > quizcount) {
+            cout << "TIME'S UP!" << endl;
+        }
+        else if (answer == "swan"){
+            double timeRemaining = max(0.0, quizcount -timeTaken);
+            int multiplier = floor(timeRemaining);
+            int questionpoint = quizscore * multiplier;
+            playerscore += questionpoint;
+            questionsright += 1;
+            cout << "Correct! I'm a swan! 🦢" << endl;
+            if (timeRemaining == 1){
+                cout << quizscore << " pts. x " << timeRemaining << " second = " << endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            else{
+                cout << quizscore << " pts. x " << timeRemaining << " seconds = " <<  endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            cout << questionpoint << " pts." << endl;
+        }
+
+                ///////////////QUESTION 25
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "************" << endl;
+        cout << "*QUESTION 25*" << endl;
+        cout << "************" << endl;
+        this_thread::sleep_for(chrono::seconds(2));
+        cout << "I am a large mammal living in the savanna. Humans hunt me for my tusks." << endl;
+        cout << " " << endl;
+        cout << "What am I?" << endl;
+
+        startTime = time(nullptr);
+        cin >> answer;
+        transform(answer.begin(), answer.end(), answer.begin(), ::tolower);
+        endTime = time(nullptr);
+        timeTaken = difftime(endTime, startTime);
+
+        if (timeTaken > quizcount) {
+            cout << "TIME'S UP!" << endl;
+        }
+        else if (answer == "elephant"){
+            double timeRemaining = max(0.0, quizcount -timeTaken);
+            int multiplier = floor(timeRemaining);
+            int questionpoint = quizscore * multiplier;
+            playerscore += questionpoint;
+            questionsright += 1;
+            cout << "Correct! I'm an elephant! 🐘" << endl;
+            if (timeRemaining == 1){
+                cout << quizscore << " pts. x " << timeRemaining << " second = " << endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            else{
+                cout << quizscore << " pts. x " << timeRemaining << " seconds = " <<  endl;
+                this_thread::sleep_for(chrono::seconds(2));
+            }
+            cout << questionpoint << " pts." << endl;
+        }
 
         // SCORES
         if (playerscore > highscore) {
