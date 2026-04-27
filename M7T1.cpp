@@ -36,7 +36,26 @@ class Restaurant {
 };
 
 int main() {
-    cout << "M7T1 - Restaurant Reviews" << endl;
+    cout << "Restaurant Reviews" << endl;
+    // create one restaurant
+    Restaurant rest1 = Restaurant("Mi casita", 4.0);
+    cout << rest1.getName() << endl;
+    cout << rest1.getRating() << endl;
+
+
+    // maek another using user input
+    Restaurant rest2 = Restaurant ("", 0.0);
+    string n;
+    double r;
+    cout << "Enter Restaurant name: ";
+    cin >> n;
+    cout << "Rating (1.0 - 5.0): ";
+    cin >> r;
+    rest2.setName(n);
+    rest2.setRating(r);
+    cout << rest2.getName() << endl;
+    cout << rest2.getRating() << endl;
+
 
     return 0;
 
